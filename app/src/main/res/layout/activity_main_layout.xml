@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainLayoutActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/menu_lines">
+
+            <EditText
+                android:id="@+id/textInputSearch"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="14dp"
+                android:layout_margin="10dp"
+                android:drawableStart="@drawable/search"
+                android:background="@drawable/custom_input_search"
+                android:hint="Search"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+        </com.google.android.material.appbar.MaterialToolbar>
+
+
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:id="@+id/bottomNavigation"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:background="@color/white"-->
+<!--            app:itemIconTint="@color/blue"-->
+<!--            app:itemTextColor="@color/blue"-->
+<!--            app:labelVisibilityMode="labeled"-->
+<!--            app:menu="@menu/nav_menu" />-->
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/blue"
+            app:tabIndicatorHeight="3.6dp"
+            app:tabIndicatorFullWidth="true"
+            app:tabIconTint="@color/blue"
+            app:tabMode="fixed">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/home_selector"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/category_selector"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/orders_selector" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/users_selector" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

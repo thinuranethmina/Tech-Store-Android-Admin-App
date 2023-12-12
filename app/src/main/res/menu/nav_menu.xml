@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottemNavHome"
+        android:icon="@drawable/home_selector"
+        android:title="" />
+    <item
+        android:id="@+id/bottemNavCategory"
+        android:icon="@drawable/category_selector"
+        android:title=""
+        />
+    <item
+        android:id="@+id/bottemNavcart"
+        android:icon="@drawable/orders_selector"
+        android:title="" />
+    <item
+        android:id="@+id/bottemNavProfile"
+        android:icon="@drawable/users_selector"
+        android:title="" />
+</menu>
